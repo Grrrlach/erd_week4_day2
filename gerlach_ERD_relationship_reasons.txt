@@ -1,0 +1,20 @@
+CUSTOMERS:
+customer ID allows tracking individual loyalty/activity/contact.
+	fk found in TICKETS so you can connect ticket sales to customer demographics and info
+
+MOVIES:
+title is imporant to group movie data
+	fk found in TICKETS
+
+TICKETS:
+customer ID allows tracking individual loyalty/activity and contact. 
+	fk for customers for that reason
+
+title is important to group movie data, which for tickets
+might include time, date, customer, etc.
+	fk for movies for that reason
+
+CONCESSIONS:
+fk for ticket number, to track how movie type impacts concession sales
+fk for customer ID, to track how customer demographics/promotions affect concession sales
+
